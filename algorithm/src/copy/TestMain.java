@@ -18,11 +18,13 @@ public class TestMain {
 		
 		String typeName = obj.getClass().getTypeName();
 		
-		if("".equals(typeName)) {
-			
+		//System.out.println(typeName);
+		if("java.lang.Integer".equals(typeName)) {
+			System.out.println("answer : " + (int) obj);
 		} else if("".equals(typeName)) {
 			
 		}
+		
 		
 	}
 
