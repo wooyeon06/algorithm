@@ -2,7 +2,15 @@ package util;
 
 public class P {
 
-    public static void arr(Object[] args) {
+    public static void arr(Object args) {
+
+        if(args instanceof int[]) {
+            arr((int[]) args);
+        }
+    }
+
+
+    public static void arr(int[] args) {
 
         StringBuilder sb = new StringBuilder();
 

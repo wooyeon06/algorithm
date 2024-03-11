@@ -1,0 +1,2 @@
+1. 왠만하면 배열로쓰자..
+java.util은 overflow가능성있음
