@@ -1,5 +1,7 @@
 package a258709;
 
+import util.P;
+
 class Solution {
 
     int n = 0;
@@ -37,7 +39,7 @@ class Solution {
 
         //init=====================================
 
-        for (int i = 0; i < dice.length; i++) {
+        for (int i = 1; i < dice.length; i++) {
             select[i] = 'A';
             selectDice(i, 0);
             select[i] = 'B';
@@ -85,16 +87,21 @@ class Solution {
                 }
             }
 
+            //System.out.println("before :" + System.currentTimeMillis());
             cntA=0;
             caseA(0, 0);
             cntB=0;
             caseB(0, 0);
+            //System.out.println("after : " + System.currentTimeMillis() + "  "  );
 
             int cnt = 0;
+            int cnt2 = 0;
             for (int i = 0; i < caseA.length; i++) {
                 for (int j = 0; j < caseB.length; j++) {
                     if(caseA[i] > caseB[j]) {
                         cnt++;
+                    } else if(caseA[i] < caseB[j]) {
+                        cnt2++;
                     }
                 }
             }
@@ -110,6 +117,18 @@ class Solution {
                     }
                 }
             }
+            if(cnt2 > max) {
+                max = cnt2;
+                int k = 0;
+                for (int i = 0; i < dice.length; i++) {
+                    if(select[i] == 'B') {
+                        answer[k] = i+1;
+                        k++;
+                    }
+                }
+            }
+
+
             return;
         }
 
