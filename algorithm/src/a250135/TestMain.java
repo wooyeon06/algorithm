@@ -10,8 +10,8 @@ public class TestMain {
 
 
 
-		//Object obj4 = solution.solution(11,	59,	30,	12,	0,	0);  //1
-		//System.out.println(obj4);
+		Object obj5 = solution.solution(11,	58,	59,	11,	59,	0);  //1
+		System.out.println(obj5);
 
 		/*Object obj1 = solution.solution(0,	5,	30,	0,	7,	0);  //2
 		System.out.println(obj1);
@@ -28,14 +28,6 @@ public class TestMain {
 		Object obj7 = solution.solution(0,	0,	0,	23,	59,	59);  //2852
 		System.out.println(obj7);*/
 
-		double m = 357.0;
-		double s = 30;
-		Double mDegree;
-		int t=1;
-		for (int i = 0; i <= 30; i++) {
-			m = m + t*(0.1d);
-			System.out.println(m);
-		}
 
 
 	}
