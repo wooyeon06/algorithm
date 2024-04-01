@@ -27,3 +27,17 @@ ex) boolean[]
 boolean[] + queue이용
 
 좌표를 이동하며 방문할 경우 큐에 기록하며 진행할 수 있다....
+
+
+5. float, double소수점 연산은 값이 정확하지 않음..
+
+* for문에서 직접 계산 x > 함수로뺀다
+public double getHDegree(int s) {
+    return (30 * (h1 % 12) + (m1 / 2d) + (s1 + s) * (1 / 120d)) % 360;
+}
+
+* d = (d*10+ 0.1d*10) / 10; 같이 정수계산 한다.
+
+
+
+
