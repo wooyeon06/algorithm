@@ -1,6 +1,8 @@
 package copy;
 
 
+import java.math.BigDecimal;
+
 public class TestMain {
 
 	public static void main(String[] args) {
@@ -9,9 +11,9 @@ public class TestMain {
 		Object obj = solution.solution(
 				""
 				);
-		
 
-		
+
+		BigDecimal b = new BigDecimal(0.1);
 	}
 
 }
