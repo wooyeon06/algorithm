@@ -41,5 +41,21 @@ public double getHDegree(int s) {
 * d = (d*10+ 0.1d*10) / 10; 같이 정수계산 한다.
 
 
+6. 유용한자료구조
+PriorityQueue
+Queue
+
+
+
+7. xCy
+ex)
+public void recur(int s, int n, int k, ArrayList list) {
+    for (int i = s; i < k; i++) {
+        PriorityQueue q = (PriorityQueue) list.get(i);
+        q.add(0);
+        recur(i, n-1, k, list);
+        q.poll();
+    }
+}
 
 
