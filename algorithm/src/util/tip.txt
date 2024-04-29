@@ -59,3 +59,7 @@ public void recur(int s, int n, int k, ArrayList list) {
 }
 
 
+
+8. union-find 알고리즘
+
+요소 A, B가 같은 그룹인지? 찾을때
