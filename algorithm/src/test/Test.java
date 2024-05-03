@@ -2,41 +2,47 @@ package test;
 
 import util.P;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Scanner;
+import java.lang.reflect.Array;
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class Test {
 
     public static void main(String[] args) {
-        //Scanner sc = new Scanner(System.in);
 
-        String str_list[] = new String[]{"u", "u", "u", "r", "u"};
+        String[] picture = new String[]{".xx...xx.", "x..x.x..x", "x...x...x", ".x.....x.", "..x...x..", "...x.x...", "....x...."};
+        int k = 2;
 
-        String[] answer = {};
+        int len = picture.length;
+        len = len * k;
+
+        String[] answer = new String[len];
 
         int idx = 0;
-        String s = "";
-        for(int i=0 ; i<str_list.length ; i++) {
+        for(int i=0 ; i<picture.length ; i++ ) {
 
-            if(str_list[i].equals("l") || str_list[i].equals("r")) {
-                idx = i;
-                s = str_list[i];
-                break;
+            String pic = picture[i];
+            String newPic = "";
+            for(int m=0 ; m<pic.length() ; m++ ) {
+                String c = "" + pic.charAt(m);
+                for(int n=0 ; n<k ; n++ ) {
+                    newPic += c;
+                }
             }
 
-        }
 
-        if("l".equals(s)) {
-            answer = Arrays.copyOfRange(str_list, 0, idx);
-        } else {
-            answer = Arrays.copyOfRange(str_list, idx+1, str_list.length);
+            for(int j=0 ; j<k ; j++ ) {
+                answer[idx] = newPic;
+                idx++;
+            }
         }
-
 
         P.arr(answer);
+
 
     }
 
 
 }
+
+

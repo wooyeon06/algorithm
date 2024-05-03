@@ -131,6 +131,38 @@ public class P {
         }
     }
 
+    public static void arr2(char[][] array) {
+        // 각 열의 최대 너비 계산
+        int[] columnWidths = new int[array[0].length];
+        for (char[] row : array) {
+            for (int j = 0; j < row.length; j++) {
+                int width = String.valueOf(row[j]).length();
+                columnWidths[j] = Math.max(columnWidths[j], width);
+            }
+        }
+
+        // 출력
+        System.out.print("  |  ");
+        for (int i = 0; i < array[0].length; i++) {
+            System.out.printf("%-" + (columnWidths[i] + 5) + "s", i);
+        }
+        System.out.println();
+        for (int i = 0; i < ((columnWidths[0]+5) * array[0].length) ; i++) {
+            System.out.print("ㅡ");
+        }
+        System.out.println();
+
+
+        for (int i = 0; i < array.length; i++) {
+            System.out.print(i + " |  ");
+            for (int j = 0; j < array[i].length; j++) {
+                // 각 열의 값 출력 후 공백 삽입하여 간격 맞춤
+                System.out.printf("%-" + (columnWidths[j] + 5) + "s", array[i][j]);
+            }
+            System.out.println(); // 개행
+        }
+    }
+
 
     public static void arr2(long[][] array) {
         // 각 열의 최대 너비 계산
