@@ -5,7 +5,7 @@ import util.P;
 import java.util.*;
 
 class Solution {
-    public int[] solution(int n, int[] slicer, int[] num_list) {
+    public int[] solution() {
         int[] answer = {};
 
 

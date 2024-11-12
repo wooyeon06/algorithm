@@ -7,7 +7,6 @@ public class TestMain {
 		// TODO Auto-generated method stub
 		Solution solution = new Solution();
 		Object obj = solution.solution(
-				"abc1abc1abc"
 				);
 
 
