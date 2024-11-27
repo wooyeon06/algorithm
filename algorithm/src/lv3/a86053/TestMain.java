@@ -1,4 +1,4 @@
-package copy;
+package lv3.a86053;
 
 public class TestMain {
 
@@ -6,6 +6,7 @@ public class TestMain {
 		// TODO Auto-generated method stub
 		Solution s = new Solution();
 		Object obj = s.solution(
+				10,	10,	new int[]{100},	new int[]{100},	new int[]{7}, new int[]{10}
 				);
 
 		System.out.println(obj);

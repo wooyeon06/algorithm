@@ -19,11 +19,33 @@ public class P {
         if(args instanceof String[]) {
             arr((String[]) args);
         }
+
+        if(args instanceof boolean[]) {
+            arr((boolean[]) args);
+        }
     }
 
 
     public static void arr(int[] args) {
 
+        StringBuilder sb = new StringBuilder();
+
+        sb.append("[");
+
+        for(int i=0 ; i<args.length ; i++) {
+            Object item = args[i];
+            if(i == args.length-1) {
+                sb.append(item);
+            } else {
+                sb.append(item + ", ");
+            }
+        }
+        sb.append("]");
+
+        System.out.println(sb);
+    }
+
+    public static void arr(boolean[] args) {
         StringBuilder sb = new StringBuilder();
 
         sb.append("[");
