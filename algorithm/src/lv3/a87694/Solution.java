@@ -1,7 +1,5 @@
 package lv3.a87694;
 
-import util.P;
-
 import java.util.LinkedList;
 import java.util.Queue;
 

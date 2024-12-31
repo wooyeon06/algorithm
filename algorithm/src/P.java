@@ -1,5 +1,3 @@
-package util;
-
 public class P {
 
     public static void arr(Object args) {

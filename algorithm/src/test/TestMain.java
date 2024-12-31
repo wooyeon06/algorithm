@@ -1,11 +1,6 @@
 package test;
 
-import util.P;
-
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
-import java.util.stream.Collectors;
 
 public class TestMain {
 	public static void main(String[] args) {

@@ -1,6 +1,5 @@
 package lv3.a72415;
 
-import util.P;
 
 import java.util.*;
 
@@ -49,7 +48,6 @@ class Solution {
         Queue<int[]> q = new LinkedList<>();
         q.add(new int[]{_r, _c});
         boolean visit[][] = new boolean[size][size];
-        P.arr2(memo);
 
         while(!q.isEmpty()) {
             int cur[] = q.poll();

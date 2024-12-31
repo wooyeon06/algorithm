@@ -13,7 +13,6 @@ public class DP {
         }
 
         int DP[] = fibonacciDP(10);
-        P.arr(DP);
 
     }
 

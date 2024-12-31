@@ -1,9 +1,5 @@
 package lv3.a87391;
 
-import util.P;
-
-import java.util.*;
-
 class Solution {
     public long solution(long n, long m, int x, int y, int[][] queries) {
         //행의 개수 n, 열의 개수 m, 정수 x와 y

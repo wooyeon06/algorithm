@@ -1,10 +1,7 @@
 package lv3.a138475;
 
-import util.DP;
-import util.P;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 class Solution {
     ArrayList<Integer> out = new ArrayList<Integer>();
@@ -40,7 +37,6 @@ class Solution {
         }
 
 
-        P.arr2(DP);
         System.out.println(out);
 
 

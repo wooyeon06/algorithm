@@ -1,8 +1,5 @@
 package lv3.a92344;
 
-import util.P;
-import java.util.*;
-
 class Solution {
     public int solution(int[][] board, int[][] skills) {
 

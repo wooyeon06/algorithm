@@ -1,7 +1,5 @@
 package lv3.a70130;
 
-import util.P;
-
 class Solution {
 
     int size = 0;

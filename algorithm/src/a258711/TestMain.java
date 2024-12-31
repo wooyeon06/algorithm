@@ -1,7 +1,6 @@
 package a258711;
 
 
-import util.P;
 
 public class TestMain {
 
@@ -17,7 +16,6 @@ public class TestMain {
 				);
 
 
-		P.arr(obj);
 
 	}
 

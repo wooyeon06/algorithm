@@ -1,7 +1,5 @@
 package a1829;
 
-import util.P;
-
 import java.util.*;
 
 class Solution {

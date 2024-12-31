@@ -1,8 +1,5 @@
 package lv3.a77886;
 
-import util.P;
-
-import java.util.ArrayList;
 import java.util.Stack;
 
 class Solution {

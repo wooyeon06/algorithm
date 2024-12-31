@@ -1,8 +1,6 @@
 package lv3.a72413;
 
 
-import util.P;
-
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.PriorityQueue;

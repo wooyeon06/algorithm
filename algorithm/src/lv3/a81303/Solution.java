@@ -1,11 +1,5 @@
 package lv3.a81303;
 
-import util.P;
-
-import java.sql.SQLOutput;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 import java.util.Stack;
 
 class Solution {

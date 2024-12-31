@@ -1,8 +1,6 @@
 package a258709;
 
 
-import util.P;
-
 public class TestMain {
 
 	public static void main(String[] args) {
@@ -21,11 +19,6 @@ public class TestMain {
 				{90,91,92,93,94,95}, {90,91,92,93,94,95},
 				{90,91,92,93,94,95}, {90,91,92,93,94,95}
 				});
-
-		//P.arr(obj);
-		//P.arr(obj2);
-		//P.arr(obj3);
-		P.arr(obj4);
 
 		
 	}

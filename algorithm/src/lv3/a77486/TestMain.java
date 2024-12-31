@@ -1,8 +1,5 @@
 package lv3.a77486;
 
-import util.P;
-
-import java.util.Arrays;
 
 public class TestMain {
 
@@ -17,7 +14,6 @@ public class TestMain {
 				);
 
 		if(obj.getClass().isArray()) {
-			P.arr(obj);
 		} else {
 			System.out.println(obj);
 		}

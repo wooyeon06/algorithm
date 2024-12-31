@@ -1,7 +1,5 @@
 package lv3.a84021;
 
-import util.P;
-
 import java.util.*;
 
 class Solution {

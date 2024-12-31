@@ -1,8 +1,5 @@
 package a250121;
 
-import util.P;
-
-import java.sql.Connection;
 import java.util.ArrayList;
 
 class Solution {

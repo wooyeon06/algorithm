@@ -1,7 +1,5 @@
 package a258709;
 
-import util.P;
-
 class Solution {
 
     int n = 0;

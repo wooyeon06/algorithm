@@ -1,7 +1,5 @@
 package a250134;
 
-import util.P;
-
 class Solution {
 
     int[][] maze;
