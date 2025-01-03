@@ -1,3 +1,5 @@
+package etc.a60059;
+
 public class TestMain {
 
 	public static void main(String[] args) {

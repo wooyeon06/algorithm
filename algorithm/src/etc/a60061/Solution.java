@@ -76,7 +76,6 @@ class Solution {
             }
         }
 
-        for (int i = 0; i < idx; i++) P.arr(result[i]);
         return result;
     }
 

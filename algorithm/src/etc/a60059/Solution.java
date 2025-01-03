@@ -1,3 +1,5 @@
+package etc.a60059;
+
 import java.util.LinkedList;
 import java.util.Queue;
 

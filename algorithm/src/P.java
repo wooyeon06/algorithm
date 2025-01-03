@@ -149,6 +149,7 @@ public class P {
             }
             System.out.println(); // 개행
         }
+        System.out.println(); // 개행
     }
 
     public static void arr2(char[][] array) {
