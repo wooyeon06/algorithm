@@ -1,9 +1,4 @@
-package temp;
-
-import java.io.BufferedInputStream;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
+package bfs.lv3.a1829;
 
 public class TestMain {
 
