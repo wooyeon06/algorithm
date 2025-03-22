@@ -1,48 +1,38 @@
 package temp;
 
-
-import java.util.LinkedList;
-import java.util.Queue;
-
 class Solution {
 
-    int dir[][] = {{1,0}, {-1,0}, {0,1}, {0,-1}};
-    public int[] solution(int m, int n, int[][] picture) {
+    //0 12시
+    //1 3시
+    //2 6시
+    //3 9시
+    public int solution(int[][] clockHands) {
+        int len = clockHands.length;
+        int cnt = 0;
 
-        Queue<int[]> q = new LinkedList<>();
-        boolean v[][] = new boolean[m][n];
+        int dir[][] = {{1, 0},  {-1, 0}, {0, 1}, {0, -1}};
 
-        int numberOfArea = 0;
-        int maxSizeOfOneArea = 0;
+        for (int i = 1; i < len; i++) {
+            for (int j = 0; j < len; j++) {
 
-        for (int i = 0; i < m; i++) {
-            for (int j = 0; j < n; j++) {
-                if(picture[i][j] == 0 || v[i][j]) continue;
-                q.add(new int[]{i, j});
-                v[i][j] = true;
-
-                int cnt = 1;
-                while(!q.isEmpty()) {
-                    int cur[] = q.poll();
+                if(clockHands[i-1][j] > 0) {
+                    int rot = 4-clockHands[i-1][j];
                     for (int[] d : dir) {
-                        int r = d[0] + cur[0];
-                        int c = d[1] + cur[1];
-                        if(r < 0 || c < 0 || r >= m || c >= n || v[r][c] || picture[r][c] == 0) continue;
-                        if(picture[cur[0]][cur[1]] == picture[r][c]) {
-                            cnt++;
 
-                            v[r][c] = true;
-                            q.add(new int[]{r, c});
-                        }
+                        int r = d[0] + i;
+                        int c = d[1] + j;
+
+                        if(r < 0 || c < 0 || r >= len || c >= len) continue;
+                        clockHands[r][c] += rot;
                     }
                 }
 
-                maxSizeOfOneArea = Math.max(maxSizeOfOneArea, cnt);
-                numberOfArea++;
             }
         }
-        System.out.println(numberOfArea + ", " + maxSizeOfOneArea);
-        return new int[]{numberOfArea, maxSizeOfOneArea};
+
+
+
+        return 0;
     }
 }
 
