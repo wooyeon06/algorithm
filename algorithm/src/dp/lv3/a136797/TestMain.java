@@ -1,7 +1,4 @@
-import java.io.BufferedInputStream;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
+package dp.lv3.a136797;
 
 public class TestMain {
 
