@@ -1,3 +1,5 @@
+package etc.a181187;
+
 class Solution {
 
     public long solution(int r1, int r2) {

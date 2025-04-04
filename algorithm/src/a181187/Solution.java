@@ -16,6 +16,7 @@ class Solution {
         long cnt = 0;
 
         for (int i = 1; i < r; i++) {
+
             double x = Math.sqrt((long) Math.pow(r,2) - (long)Math.pow(i,2));
 
             System.out.println(x);
