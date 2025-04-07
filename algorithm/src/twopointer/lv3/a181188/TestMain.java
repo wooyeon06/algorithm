@@ -1,5 +1,4 @@
-package a181187;
-
+package twopointer.lv3.a181188;
 
 public class TestMain {
 
@@ -7,14 +6,12 @@ public class TestMain {
 		// TODO Auto-generated method stub
 		Solution solution = new Solution();
 		Object obj = solution.solution(
-				5, 6
-				);
-
-		Solution2 solution2 = new Solution2();
-		Object obj2 = solution2.solution(
-				5, 6
+				new int[][]{{4,5},{4,8},{10,14},{11,13},{5,12},{3,7},{1,4}}
+				//new int[][]{{0,6}, {6,9}}
 		);
 
+
+		System.out.println(obj);
 
 	}
 
