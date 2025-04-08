@@ -1,8 +1,8 @@
-package a250121;
+package sort.lv3.a250121;
 
 import java.util.ArrayList;
 
-class Solution {
+class Solution2 {
     public int[][] solution(int[][] data, String ext, int val_ext, String sort_by) {
 
         int type = 0;
@@ -56,7 +56,6 @@ class Solution {
                 int[] temp;
                 System.out.println(answer[j+1][stype]);
                 if(answer[j+1][stype] < answer[j][stype]) {
-                    System.out.println("?");
                     temp  = answer[j+1];
                     answer[j+1] = answer[j];
                     answer[j] = temp;
