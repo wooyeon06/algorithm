@@ -1,6 +1,6 @@
-package a250134;
+package bfs.lv3.a250134;
 
-class Solution {
+class Solution2 {
 
     int[][] maze;
     int x, y;

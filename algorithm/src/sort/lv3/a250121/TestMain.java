@@ -15,7 +15,6 @@ public class TestMain {
 		);
 
 		int[][] arr = (int[][]) obj;
-		P.arr2(arr);
 	}
 
 }

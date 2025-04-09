@@ -1,3 +1,5 @@
+package bfs.lv3.a250134;
+
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Queue;
