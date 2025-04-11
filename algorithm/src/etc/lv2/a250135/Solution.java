@@ -1,5 +1,4 @@
-package a250135;
-
+package etc.lv2.a250135;
 
 class Solution {
 
@@ -27,37 +26,26 @@ class Solution {
         double s_degree = getSDegree(0);
         double ex_s_degree = s_degree;
 
-
         //초기값 체크
-        int idx = 1;
         if (h_degree == s_degree && m_degree == s_degree) {
             if (isLog) System.out.println("시0 == 분 0 ==초0");
             cnt++;
         }
-
-        for (int i = idx; i <= S; i++) {
+        for (int i = 1; i <= S; i++) {
             ex_s_degree = getSDegree(i - 1);
             s_degree = getSDegree(i);
             m_degree = getMDegree(i);
             h_degree = getHDegree(i);
 
-            if (isLog) {
-                //System.out.println("s_degree : " + s_degree);
-                //System.out.println("m_degree : " + m_degree);
-                //System.out.println("h_degree : " + h_degree);
-            }
             if (h_degree == s_degree && m_degree == s_degree) {
                 if (isLog) System.out.println("시0 == 분 0 ==초0");
                 cnt++;
             } else {
 
-
-                //System.out.println("m_degree : " + m_degree + " , " + "t_s_degree : " + t_s_degree);
-
                 double t_s_degree = s_degree;
                 if (s_degree == 0) t_s_degree = 360;
 
-                if ((ex_s_degree == 0 && getHDegree(i - 1) == 0)) {
+                if ((ex_s_degree == 0 && getHDegree(i - 1) == 0)) { //0초에서 1초로 가는건 else if(h_degree == s_degree) 에서 이미 계산됨
                     continue;
                 } else if(h_degree == s_degree) {
                     if (isLog) System.out.println("시 == 초");
@@ -66,7 +54,6 @@ class Solution {
                     if (isLog) System.out.println(ex_s_degree + " < h_degree (" + h_degree + ") < " + t_s_degree);
                     cnt++;
                 }
-
 
                 if ((ex_s_degree == 0 && getMDegree(i - 1) == 0)) {
                     continue;
@@ -84,14 +71,17 @@ class Solution {
 
 
     public double getHDegree(int s) {
+        //360/12 => 1도  + 60분에 30도 + 3600초에 30도
         return (30 * (h1 % 12) + (m1 / 2d) + (s1 + s) * (1 / 120d)) % 360;
     }
 
     public double getMDegree(int s) {
+        //360/60 => 1도  + 10초에 1도
         return (m1 * 6 +  (s1 + s) * (1 / 10d)) % 360;
     }
 
     public double getSDegree(int s) {
+        //360/60 => 초당 1도
         return (s1 * 6 + s * 6) % 360;
     }
 

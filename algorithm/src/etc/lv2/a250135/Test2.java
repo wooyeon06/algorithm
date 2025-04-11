@@ -1,4 +1,4 @@
-package a250135;
+package etc.lv2.a250135;
 
 public class Test2 {
     static final int CLOCK_LENGTH = 43200;

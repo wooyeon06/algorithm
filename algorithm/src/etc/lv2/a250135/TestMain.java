@@ -1,14 +1,17 @@
-package a250135;
-
+package etc.lv2.a250135;
 
 public class TestMain {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Solution solution = new Solution();
+		Solution s = new Solution();
 
-		/*Object obj1 = solution.solution(0,	5,	30,	0,	7,	0);  //2
-		System.out.println(obj1);
+		//Object obj1 = s.solution(0,	5,	30,	0,	7,	0);  //2
+		//System.out.println(obj1);
+
+		Object obj2 = s.solution(12,	0,	0,	12,	0,	30); //1
+		System.out.println(obj2);
+
+		/*
 		Object obj2 = solution.solution(12,	0,	0,	12,	0,	30); //1
 		System.out.println(obj2);
 		Object obj3 = solution.solution(0,	6,	1,	0,	6,	6);  //0
@@ -24,17 +27,12 @@ public class TestMain {
 		Object obj9 = solution.solution(0, 0, 0, 23, 0, 0);  //2735
 		System.out.println(obj9);*/
 
-		Object obj8 = solution.solution(0,	0,	1,	0,	59,	59);//118
-		System.out.println(obj8);
+		//Object obj8 = s.solution(0,	0,	1,	0,	59,	59);//118
+		//System.out.println(obj8);
 
 		//Test2 test2 = new Test2();
 		//int res = test2.solution(0,	0,	0,	0,	59,	59);
 		//System.out.println(res);
-
-
-
-
-
 
 	}
 
