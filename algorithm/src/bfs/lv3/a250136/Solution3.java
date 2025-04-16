@@ -1,8 +1,8 @@
-package a250136;
+package bfs.lv3.a250136;
 
 import java.util.*;
 
-public class Solution {
+public class Solution3 {
 
     int id = 2;
     int[][] dir = new int[][]{

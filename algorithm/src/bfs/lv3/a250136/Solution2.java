@@ -1,4 +1,4 @@
-package a250136;
+package bfs.lv3.a250136;
 
 
 class Solution2 {
